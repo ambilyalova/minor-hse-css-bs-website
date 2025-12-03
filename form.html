@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Записать на занятие</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #E869AA;">
+         <div class="container-fluid">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html">Главная</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="index.html#shows">Танцевальные шоу</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="https://en.wikipedia.org/wiki/Dance" target="_blank">Вики-статья</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="ballet-info.html"><img src="static/ballet.png" height="20px"></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="streetstyle-info.html">Уличные стили</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="dance-styles.html">Стили</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link active" href="form.html">Записаться на занятие</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container mt-3">
+         <h2>Записаться на занятие</h2>
+         <form action='https://www.google.com/' method="get" target="_blank">
+            <div class="mb-3 mt-3">
+               <label for="surname">Фамилия</label>
+               <input type="text" class="form-control" id="surname" name="surname" value="Билялова" required> 
+            </div>
+            <div class="mb-3">
+               <label for="name">Имя</label>
+               <input type="text" class="form-control" id="name" name="name" value="Аделия" required> 
+            </div>
+            <div class="mb-3">
+               <label for="email">Электронная почта:</label>
+               <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="mb-3">
+               <label for="pwd">Пароль:</label>
+               <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <label class="form-check-label" for="levels">Уровень подготовки</label>
+            <div class="form-check" id="levels">
+               <input type="radio" class="form-check-input" id="start" name="optradio" value="start">Начальный
+               <label class="form-check-label" for="start"></label>
+            </div>
+            <div class="form-check">
+               <input type="radio" class="form-check-input" id="mid" name="optradio" value="mid">Средний
+               <label class="form-check-label" for="mid"></label>
+            </div>
+            <div class="form-check mb-3">
+               <input type="radio" class="form-check-input" id="pro" name="optradio" value="pro">Продолжающий
+               <label class="form-check-label" for="pro"></label>
+            </div>
+            <div class="form-check mb-3">
+               <label class="form-check-label">
+               <input class="form-check-input" type="checkbox" name="of-age"> Вам есть 18 лет
+               </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+         </form>
+      </div>
+   </body>
+</html>
